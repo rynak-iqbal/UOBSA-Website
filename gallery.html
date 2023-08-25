@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/26ea42be94.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="menubtn" onclick="changeMenuButton(this)">
+        <div class="bar1" id="bar1"></div>
+        <div class="bar2" id="bar2"></div>
+        <div class="bar3" id="bar3"></div>
+      </div>
+
+
+   <div id="sidebar">
+        <a href="index.html"><h2>Home</h2></a>
+        <a href="events.html"><h2>Events</h2></a>
+        <a href="gallery.html" class="active"><h2>Gallery</h2></a>
+        <a href="team.html"><h2>Team</h2></a>
+        <a href="resources.html"><h2>Resources</h2></a>
+    </div>
+
+    <div class="white-bar">
+        <a href="index.html"><img class="logo" src="Images/logo.png" id="logo"></a>
+        <div id="topbar">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="team.html">Team</a>
+            <a href="resources.html">Resources</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <img src="Images/gallery.jpg" style="object-position: 50% 10%;">
+        <div class="caption">
+            <h1>Gallery</h1>
+        </div>
+    </div>
+
+    <div class="gallery-green" id="gallery-green">
+
+    <div class="greetings">
+        <h2>Our 2022 events!</h2>
+    </div>
+
+    <p><code>resize</code></p>
+
+    <div class="gallery-container">
+        <div class="center-anchor"><a class="adda-title" href="index.html" style="color: white; text-decoration: none;"></a></div>
+        <div class="long-gallery-titles">
+            <div class="fuchka-title" id="fuchka-title"></div>
+            <div class="iftar-title" id="iftar-title"></div>
+        </div>
+        <h2><i><a href="index.html" style="color: white; text-decoration: none;">Adda Night</i> 🎲 ←</a><br><br>Fuchka Night 🤤</h2>
+
+        <div class="fuchka-container" id="fuchka-container">
+            <img class="fuchka-night" id="fuchka-night" src="Images/fuchka_night.png" onclick="openFuchkaCards()">
+            <img class="fuchka-group" id="fuchka-group" src="Images/fuchka-group.png" onclick="openFuchkaCards()">
+        </div>
+
+        <h2>Iftar Night 🍽️</h2>
+
+        <div class="iftar-container" id="iftar-container">
+            <img class="iftar-night" id="iftar-night" src="Images/iftar_night.png" onclick="openIftarCards(); playVid()">
+            <video class="iftar-vid" id="iftar-vid" onclick="openIftarCards(); playVid();">
+                <source src="Images/iftar_vid.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+
+        <h2>Pohela Boishakh 🎉<br></h2>
+        <h4><br><span style="line-height: 1.7;">Visit the following google drive folder to see more pics from our Pohela Boishakh!<br><br><a href="https://shorturl.at/agnE2W" style="color: lightblue; text-decoration: none;" >https://shorturl.at/agnE2W</a><br><br></span></h4>
+    </div>
+
+    <div class="gallery-pohela">
+        <h2>Pohela Boishakh 🎉<br></h2>
+        <h4><br><span style="line-height: 1.7;">Visit the following google drive folder to see more pics from our Pohela Boishakh!<br><br><a href="https://shorturl.at/agnE2W" style="color: lightblue; text-decoration: none;">https://shorturl.at/agnE2</a><br><br></span></h4>
+    </div>
+
+    </div>
+
+    <div class="footer-container">
+        <div class="footer" id="footer">
+            <div class="contact-us">
+                <h2>Contact us!</h2>
+            </div>
+            <div class="socials2">
+                <a href="mailto:uobsa@uottawa.ca"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.instagram.com/uottawabsa/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://discord.gg/njTHtrqUun"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.tiktok.com/@uottawabsa?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/uottawabsa"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="copyright">
+                <h4>UOBSA 2023 ©</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-footer-bg"></div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
