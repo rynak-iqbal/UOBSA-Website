@@ -282,6 +282,10 @@ p{
   background-color: #273b3a;
 }
 
+.events-green{
+  background-color: #273b3a;
+}
+
 .gallery-green{
   background-color: #273b3a;
   height: 100%;
@@ -1033,19 +1037,23 @@ p{
     top: 877px;
     margin-left: 337px;
   }
+  .events-green{
+    height: 920px;
+  }
   .block-click{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     width: 705px;
     height: 30px;
-    top: 872px;
+    top: 882px;
     z-index: 100;
   }
 
   .season-btn{
     font-size: x-large;
     width: 165px;
+    top: 35px;
   }
   #fall-btn{
     float: left;
@@ -1085,20 +1093,39 @@ p{
   #winter-old-btn span{
     display: none !important;
   }
+  .events-border{
+    position: absolute;
+    height: 100px;
+    width: 1124px;
+    background-color: #333;
+    background-image: linear-gradient(to right, #444 50%, rgba(0,0,0,0) 20%);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 868px;
+    border-radius: 25px;
+  }
   .events-container{
     width: 1124px;
     margin: auto;
   }
+
   .fall-events{
-    top: 935px;
+    top: 945px;
     width: 562px;
     float: left;
     opacity: 1 !important;
+    background-color: #444;
+    border-bottom-left-radius: 25px;
   }
   .winter-events{
     width: 50%;
+    height: 682px;
+    top: 65px !important;
     left: 562px;
     opacity: 1 !important;
+    background-color: #333;
+    margin-bottom: 115px;
+    border-bottom-right-radius: 25px;
   }
   .gallery-pohela{
     margin: auto;
