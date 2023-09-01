@@ -405,6 +405,7 @@ p{
   bottom: 25px;
 }
 
+
 .sign-up{
   position: relative;
   bottom: 15px;
@@ -1098,7 +1099,7 @@ p{
     height: 100px;
     width: 1124px;
     background-color: #a03d3c;
-    background-image: linear-gradient(to right, #274a38 50%, rgba(0,0,0,0) 20%);
+    background-image: linear-gradient(to right, #274a39 50%, rgba(0,0,0,0) 20%);
     left: 50%;
     transform: translateX(-50%);
     top: 868px;
