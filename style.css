@@ -1097,8 +1097,8 @@ p{
     position: absolute;
     height: 100px;
     width: 1124px;
-    background-color: #333;
-    background-image: linear-gradient(to right, #444 50%, rgba(0,0,0,0) 20%);
+    background-color: #a03d3c;
+    background-image: linear-gradient(to right, #274a38 50%, rgba(0,0,0,0) 20%);
     left: 50%;
     transform: translateX(-50%);
     top: 868px;
@@ -1114,7 +1114,7 @@ p{
     width: 562px;
     float: left;
     opacity: 1 !important;
-    background-color: #444;
+    background-color: #274a38;
     border-bottom-left-radius: 25px;
   }
   .winter-events{
@@ -1123,7 +1123,7 @@ p{
     top: 65px !important;
     left: 562px;
     opacity: 1 !important;
-    background-color: #333;
+    background-color: #a03d3c;
     margin-bottom: 115px;
     border-bottom-right-radius: 25px;
   }
