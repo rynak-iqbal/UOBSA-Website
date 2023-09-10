@@ -382,6 +382,7 @@ p{
   padding-bottom: 45px;
   line-height: 1.7;
   max-width: 1084px;
+  z-index: 100;
 }
 
 .introduction2-end-normal{
