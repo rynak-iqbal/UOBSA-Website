@@ -465,6 +465,35 @@ p{
   background-color: slategray;
 }
 
+.sponsors{
+  position: relative;
+  height: 65px;
+  width: 100%;
+  background-color:#444;
+  overflow-y: hidden;
+}
+
+.sponsors-container{
+  width: 375px;
+  margin: auto;
+}
+
+.uottawa{
+  position: relative;
+  float: left;
+  top: 5px;
+  height: 40px;
+  width: auto;
+}
+
+.celestian{
+  position: relative;
+  float: right;
+  top: 7px;
+  height: 50px;
+  width: auto;
+}
+
 .footer-container{
   width: 100%;
 }
@@ -1140,23 +1169,23 @@ p{
   }
   .footer-bg{
     visibility: visible;
-    top: 2084px;
+    top: 2149px;
   }
   .resources-footer-bg{
     visibility: visible;
-    top: 2025px;
+    top: 2092px;
   }
   .gallery-footer-bg{
     visibility: visible;
-    top: 2355px;
+    top: 2420px;
   }
   .events-footer-bg{
     visibility: visible;
-    top: 1675px;
+    top: 1740px;
   }
   .team-footer-bg{
     visibility: visible;
-    top: 5833px;
+    top: 5898px;
   }
 }
 
