@@ -1138,6 +1138,9 @@ p{
   .events-container{
     width: 1124px;
     margin: auto;
+    height: 745px;
+    border-radius: 25px;
+    box-shadow: 10px 50px 15px black;
   }
 
   .fall-events{
