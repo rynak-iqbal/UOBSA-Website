@@ -282,6 +282,10 @@ p{
   background-color: #273b3a;
 }
 
+.events-green{
+  background-color: #273b3a;
+}
+
 .gallery-green{
   background-color: #273b3a;
   height: 100%;
@@ -378,6 +382,7 @@ p{
   padding-bottom: 45px;
   line-height: 1.7;
   max-width: 1084px;
+  z-index: 100;
 }
 
 .introduction2-end-normal{
@@ -401,6 +406,7 @@ p{
   bottom: 25px;
 }
 
+
 .sign-up{
   position: relative;
   bottom: 15px;
@@ -412,6 +418,7 @@ p{
   border-color: white; 
   padding: 1em; 
   border-radius: 15px;
+  background-color: #a03d3c;
 }
 
 .footer-bg{
@@ -457,6 +464,35 @@ p{
   width: 100%;
   top: 0;
   background-color: slategray;
+}
+
+.sponsors{
+  position: relative;
+  height: 65px;
+  width: 100%;
+  background-color:#444;
+  overflow-y: hidden;
+}
+
+.sponsors-container{
+  width: 375px;
+  margin: auto;
+}
+
+.uottawa{
+  position: relative;
+  float: left;
+  top: 5px;
+  height: 40px;
+  width: auto;
+}
+
+.celestian{
+  position: relative;
+  float: right;
+  top: 7px;
+  height: 50px;
+  width: auto;
 }
 
 .footer-container{
@@ -1032,19 +1068,23 @@ p{
     top: 877px;
     margin-left: 337px;
   }
+  .events-green{
+    height: 920px;
+  }
   .block-click{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     width: 705px;
     height: 30px;
-    top: 872px;
+    top: 882px;
     z-index: 100;
   }
 
   .season-btn{
     font-size: x-large;
     width: 165px;
+    top: 35px;
   }
   #fall-btn{
     float: left;
@@ -1084,20 +1124,42 @@ p{
   #winter-old-btn span{
     display: none !important;
   }
+  .events-border{
+    position: absolute;
+    height: 100px;
+    width: 1124px;
+    background-color: #a03d3c;
+    background-image: linear-gradient(to right, #274a39 50%, rgba(0,0,0,0) 20%);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 868px;
+    border-radius: 25px;
+  }
   .events-container{
     width: 1124px;
     margin: auto;
+    height: 745px;
+    border-radius: 25px;
+    box-shadow: 10px 50px 15px black;
   }
+
   .fall-events{
-    top: 935px;
+    top: 945px;
     width: 562px;
     float: left;
     opacity: 1 !important;
+    background-color: #274a38;
+    border-bottom-left-radius: 25px;
   }
   .winter-events{
     width: 50%;
+    height: 682px;
+    top: 65px !important;
     left: 562px;
     opacity: 1 !important;
+    background-color: #a03d3c;
+    margin-bottom: 115px;
+    border-bottom-right-radius: 25px;
   }
   .gallery-pohela{
     margin: auto;
@@ -1111,23 +1173,23 @@ p{
   }
   .footer-bg{
     visibility: visible;
-    top: 2084px;
+    top: 2149px;
   }
   .resources-footer-bg{
     visibility: visible;
-    top: 2025px;
+    top: 2092px;
   }
   .gallery-footer-bg{
     visibility: visible;
-    top: 2355px;
+    top: 2420px;
   }
   .events-footer-bg{
     visibility: visible;
-    top: 1675px;
+    top: 1740px;
   }
   .team-footer-bg{
     visibility: visible;
-    top: 5833px;
+    top: 5898px;
   }
 }
 
