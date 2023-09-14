@@ -307,6 +307,12 @@ p{
   max-width: 1084px;
 }
 
+.taste{
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
 .card-container{
   position: relative;
   width: 300px;
@@ -1173,7 +1179,7 @@ p{
   }
   .footer-bg{
     visibility: visible;
-    top: 2149px;
+    top: 2873px;
   }
   .resources-footer-bg{
     visibility: visible;
