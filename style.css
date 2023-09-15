@@ -311,6 +311,7 @@ p{
   width: 100%;
   height: auto;
   border-radius: 25px;
+  object-fit: inherit;
 }
 
 .card-container{
@@ -1075,7 +1076,7 @@ p{
     margin-left: 337px;
   }
   .events-green{
-    height: 920px;
+    height: 930px;
   }
   .block-click{
     position: absolute;
@@ -1090,7 +1091,7 @@ p{
   .season-btn{
     font-size: x-large;
     width: 165px;
-    top: 35px;
+    top: 45px;
   }
   #fall-btn{
     float: left;
@@ -1138,7 +1139,7 @@ p{
     background-image: linear-gradient(to right, #274a39 50%, rgba(0,0,0,0) 20%);
     left: 50%;
     transform: translateX(-50%);
-    top: 868px;
+    top: 878px;
     border-radius: 25px;
   }
   .events-container{
@@ -1146,11 +1147,11 @@ p{
     margin: auto;
     height: 745px;
     border-radius: 25px;
-    box-shadow: 10px 50px 15px black;
+  
   }
 
   .fall-events{
-    top: 945px;
+    top: 955px;
     width: 562px;
     float: left;
     opacity: 1 !important;
@@ -1160,7 +1161,7 @@ p{
   .winter-events{
     width: 50%;
     height: 682px;
-    top: 65px !important;
+    top: 75px !important;
     left: 562px;
     opacity: 1 !important;
     background-color: #a03d3c;
@@ -1191,7 +1192,7 @@ p{
   }
   .events-footer-bg{
     visibility: visible;
-    top: 1740px;
+    top: 1750px;
   }
   .team-footer-bg{
     visibility: visible;
