@@ -260,17 +260,19 @@ function openFuchkaCards(){
     document.getElementById("fuchka-group").style.width = "320px";
     document.getElementById("fuchka-night").style.cursor = "default";
     document.getElementById("fuchka-group").style.cursor = "default";
-  } else {
-    document.getElementById("fuchka-container").style.transitionDuration = "0.5s";
-    document.getElementById("fuchka-group").style.transitionDuration = "0.5s";
-    document.getElementById("fuchka-title").style.transitionDuration = "0.5s";
-    document.getElementById("fuchka-container").style.marginLeft = "50%";
-    document.getElementById("fuchka-container").style.transform = "translateX(-50%)";
-    document.getElementById("fuchka-group").style.right = "-40px";
-    document.getElementById("fuchka-group").style.bottom = "-10px";
-    document.getElementById("fuchka-title").style.opacity = "0";
-    document.getElementById("fuchka-night").style.cursor = "default";
-    document.getElementById("fuchka-group").style.cursor = "default";
+  // } else {
+  //   document.getElementById("fuchka-container").style.transitionDuration = "0.5s";
+  //   document.getElementById("fuchka-group").style.transitionDuration = "0.5s";
+  //   document.getElementById("fuchka-title").style.transitionDuration = "0.5s";
+  //   document.getElementById("fuchka-container").style.marginLeft = "50%";
+  //   document.getElementById("fuchka-container").style.transform = "translateX(-50%)";
+  //   document.getElementById("fuchka-group").style.right = "-40px";
+  //   document.getElementById("fuchka-group").style.bottom = "-10px";
+  //   document.getElementById("fuchka-title").style.opacity = "0";
+  //   document.getElementById("fuchka-night").style.cursor = "default";
+  //   document.getElementById("fuchka-group").style.cursor = "default";
+  // }
+
   }
 
   fuchkaCardsAreOpen = true;
@@ -288,17 +290,18 @@ function openIftarCards(){
     document.getElementById("iftar-vid").style.width = "320px";
     document.getElementById("iftar-night").style.cursor = "default";
     document.getElementById("iftar-vid").style.cursor = "default";
-  } else {
-    document.getElementById("iftar-container").style.transitionDuration = "0.5s";
-    document.getElementById("iftar-vid").style.transitionDuration = "0.5s";
-    document.getElementById("iftar-title").style.transitionDuration = "0.5s";
-    document.getElementById("iftar-container").style.marginLeft = "50%";
-    document.getElementById("iftar-container").style.transform = "translateX(-50%)";
-    document.getElementById("iftar-vid").style.right = "-40px";
-    document.getElementById("iftar-vid").style.bottom = "-70px";
-    document.getElementById("iftar-title").style.opacity = "0";
-    document.getElementById("iftar-night").style.cursor = "default";
-    document.getElementById("iftar-vid").style.cursor = "default";
+  // } else {
+  //   document.getElementById("iftar-container").style.transitionDuration = "0.5s";
+  //   document.getElementById("iftar-vid").style.transitionDuration = "0.5s";
+  //   document.getElementById("iftar-title").style.transitionDuration = "0.5s";
+  //   document.getElementById("iftar-container").style.marginLeft = "50%";
+  //   document.getElementById("iftar-container").style.transform = "translateX(-50%)";
+  //   document.getElementById("iftar-vid").style.right = "-40px";
+  //   document.getElementById("iftar-vid").style.bottom = "-70px";
+  //   document.getElementById("iftar-title").style.opacity = "0";
+  //   document.getElementById("iftar-night").style.cursor = "default";
+  //   document.getElementById("iftar-vid").style.cursor = "default";
+  // }
   }
 
   iftarCardsAreOpen = true;
@@ -310,7 +313,6 @@ function changeFuchkaCardView(){
       document.getElementById("fuchka-container").style.transitionProperty = "none";
       document.getElementById("fuchka-night").style.transitionProperty = "none";
       document.getElementById("fuchka-group").style.transitionProperty = "none";
-      document.getElementById("fuchka-title").style.transitionProperty = "none";
       document.getElementById("fuchka-container").style.height = "1050px";
       document.getElementById("fuchka-container").style.margin = "auto";
       document.getElementById("fuchka-container").style.transform = "none";
@@ -319,21 +321,17 @@ function changeFuchkaCardView(){
       document.getElementById("fuchka-group").style.left = "0";
       document.getElementById("fuchka-group").style.right = "revert";
       document.getElementById("fuchka-group").style.width = "320px";
-      document.getElementById("fuchka-title").style.opacity = "1";
     } else {
       document.getElementById("fuchka-container").style.transitionProperty = "none";
+      document.getElementById("fuchka-night").style.transitionProperty = "none";
       document.getElementById("fuchka-group").style.transitionProperty = "none";
-      document.getElementById("fuchka-title").style.transitionProperty = "none";
-      document.getElementById("fuchka-group").style.left = "revert";
-      document.getElementById("fuchka-group").style.right = "-40px";
-      document.getElementById("fuchka-group").style.bottom = "-10px";
       document.getElementById("fuchka-container").style.height = "530px";
-      document.getElementById("fuchka-container").style.margin = "revert";
-      document.getElementById("fuchka-container").style.marginLeft = "50%";
-      document.getElementById("fuchka-container").style.transform = "translateX(-50%)";
       document.getElementById("fuchka-night").style.width = "345px";
       document.getElementById("fuchka-group").style.width = "345px";
-      document.getElementById("fuchka-title").style.opacity = "0";
+      document.getElementById("fuchka-group").style.left = "revert";
+      document.getElementById("fuchka-group").style.right = "-40px";
+      document.getElementById("fuchka-group").style.bottom = "-55px";
+      
     } 
   }
 }
@@ -344,7 +342,6 @@ function changeIftarCardView(){
       document.getElementById("iftar-container").style.transitionProperty = "none";
       document.getElementById("iftar-night").style.transitionProperty = "none";
       document.getElementById("iftar-vid").style.transitionProperty = "none";
-      document.getElementById("iftar-title").style.transitionProperty = "none";
       document.getElementById("iftar-container").style.height = "1050px";
       document.getElementById("iftar-container").style.margin = "auto";
       document.getElementById("iftar-container").style.transform = "none";
@@ -353,21 +350,16 @@ function changeIftarCardView(){
       document.getElementById("iftar-vid").style.left = "0";
       document.getElementById("iftar-vid").style.right = "revert";
       document.getElementById("iftar-vid").style.width = "320px";
-      document.getElementById("iftar-title").style.opacity = "1";
     } else {
       document.getElementById("iftar-container").style.transitionProperty = "none";
+      document.getElementById("iftar-night").style.transitionProperty = "none";
       document.getElementById("iftar-vid").style.transitionProperty = "none";
-      document.getElementById("iftar-title").style.transitionProperty = "none";
-      document.getElementById("iftar-vid").style.left = "revert";
-      document.getElementById("iftar-vid").style.right = "-40px";
-      document.getElementById("iftar-vid").style.bottom = "-70px";
       document.getElementById("iftar-container").style.height = "530px";
-      document.getElementById("iftar-container").style.margin = "revert";
-      document.getElementById("iftar-container").style.marginLeft = "50%";
-      document.getElementById("iftar-container").style.transform = "translateX(-50%)";
       document.getElementById("iftar-night").style.width = "345px";
       document.getElementById("iftar-vid").style.width = "345px";
-      document.getElementById("iftar-title").style.opacity = "0";
+      document.getElementById("iftar-vid").style.left = "revert";
+      document.getElementById("iftar-vid").style.right = "-40px";
+      document.getElementById("iftar-vid").style.bottom = "-142px";
     } 
   }
 }
