@@ -1086,7 +1086,10 @@ p{
     flex: wrap;
   }
   .dates-and-tuition{
-    margin-right: 100px;
+    margin-right: 50px;
+  }
+  .housing{
+    margin-left: 50px;
   }
   .gallery-container{
     margin: auto;
@@ -1222,7 +1225,7 @@ p{
   }
   .resources-footer-bg{
     visibility: visible;
-    top: 2092px;
+    top: 2012px;
   }
   .gallery-footer-bg{
     visibility: visible;
