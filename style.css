@@ -14,6 +14,7 @@ body{
   width: 100%;
   min-height: 100vh;
   background-color: #c1cdbd;
+  position: relative;
 }
 
 hr{
@@ -429,12 +430,12 @@ p{
 }
 
 .footer-bg{
-  visibility: hidden;
   position: absolute;
+  visibility: hidden;
   height: 65px;
   width: 100%;
-  top: 0;
   background-color: slategray;
+  top: calc(100% - 65px);
 }
 
 .resources-footer-bg{
@@ -1221,7 +1222,6 @@ p{
   }
   .footer-bg{
     visibility: visible;
-    top: 2873px;
   }
   .resources-footer-bg{
     visibility: visible;
