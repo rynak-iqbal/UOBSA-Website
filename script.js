@@ -330,7 +330,7 @@ function changeFuchkaCardView(){
       document.getElementById("fuchka-group").style.width = "345px";
       document.getElementById("fuchka-group").style.left = "revert";
       document.getElementById("fuchka-group").style.right = "-40px";
-      document.getElementById("fuchka-group").style.bottom = "-55px";
+      document.getElementById("fuchka-group").style.bottom = "-60px";
       
     } 
   }
@@ -359,7 +359,7 @@ function changeIftarCardView(){
       document.getElementById("iftar-vid").style.width = "345px";
       document.getElementById("iftar-vid").style.left = "revert";
       document.getElementById("iftar-vid").style.right = "-40px";
-      document.getElementById("iftar-vid").style.bottom = "-142px";
+      document.getElementById("iftar-vid").style.bottom = "-147px";
     } 
   }
 }
