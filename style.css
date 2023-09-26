@@ -299,6 +299,20 @@ p{
   height: 90px;
 }
 
+.greetings2{
+  position: relative;
+  text-align: center;
+  top: 35px;
+  height: 90px;
+}
+
+.greetings3{
+  position: relative;
+  text-align: center;
+  top: 35px;
+  height: 90px;
+}
+
 
 .introduction{
   position: relative;
@@ -703,7 +717,7 @@ p{
   position: relative;
   width: 90%;
   margin: auto;
-  top: 35px;
+  top: 5px;
   text-align: center;
 }
 
@@ -712,7 +726,7 @@ p{
   width: 351px;
   aspect-ratio: 1/1;
   margin: 0px auto;
-  margin-top: 70px;
+  margin-top: 40px;
   border-radius: 25px;
   overflow: hidden;
 }
@@ -766,7 +780,12 @@ p{
 
 .space{
   position: relative;
-  height: 80px;
+  padding-top: 100px;
+}
+
+.space2{
+  position: relative;
+  height: 75px;
 }
 
 
@@ -785,7 +804,7 @@ p{
 
 .fall-events{
   position: absolute;
-  top: 722.5px;
+  top: 287px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #273b3a;
@@ -816,7 +835,7 @@ p{
 
 .resources-text{
   position: relative;
-  top: 35px;
+  top: 5px;
   max-width: 1084px;
   margin-left: 20px;
   margin-right: 20px;
@@ -868,21 +887,33 @@ p{
     font-size: large;
     top: 60px; 
   }
-  .resources-text{
+  .greetings3{
+    font-size: large;
     top: 60px;
+  }
+  .greetings2{
+    text-align: left;
+    font-size: x-large;
+    top: 60px;
+    max-width: 1124px;
+    margin: auto;
+    padding-left: 20px;
+  }
+  .resources-text{
+    top: 30px;
   }
   .resources-text h2{
     font-size: 1.7em;
   }
   .pres-subheading{
     font-size: large;
-    top: 60px;
+    top: 35px;
   }
   .team-subheading{
     font-size: large;
   }
   .box-zyan{
-    margin-top: 95px;
+    margin-top: 70px;
   }
   .introduction{
     top: 30px;
@@ -949,15 +980,18 @@ p{
   .season-btn{
     top: 25px;
   }
+  .space{
+    display: none;
+  }
   .fall-events{
-    top: 970px;
+    top: 335px;
   }
   .winter-events{
     top: 55px;
     padding-bottom: 85px;
   }
   .gallery-green{
-    height: 1550px;
+    height: 1555px;
   }
   
   .gallery-container h2{
@@ -968,20 +1002,20 @@ p{
   }
   .adda-title:after{
     position: relative;
-    top: 30px;
+    top: 35px;
     font-size: 1.7em;
     content: 'Adda Night 🎲 ←';
     z-index: 9999;
   }
   .fuchka-title:after{
     position: relative;
-    top: 55px;
+    top: 60px;
     font-size: 1.7em;
     content: 'Fuchka Night 🤤';
   }
   .iftar-title:after{
     position: relative;
-    top: 640px;
+    top: 645px;
     font-size: 1.7em;
     content: 'Iftar Night 🍽️';
   }
@@ -993,12 +1027,12 @@ p{
   }
   .fuchka-night{
     width: 345px;
-    top: 55px;
+    top: 60px;
     cursor: default;
   }
   .fuchka-group{
     width: 345px;
-    bottom: -55px;
+    bottom: -60px;
     left: revert;
     right: -40px;
     cursor: default;
@@ -1010,12 +1044,12 @@ p{
   }
   .iftar-night{
     width: 345px;
-    top: 142px;
+    top: 147px;
     cursor: default;
   }
   .iftar-vid{
     width: 345px;
-    bottom: -142px;
+    bottom: -147px;
     left: revert;
     right: -40px;
     cursor: default;
@@ -1058,7 +1092,7 @@ p{
   .gallery-pohela{
     position: relative;
     visibility: visible;
-    top: 160px;
+    top: 165px;
     max-width: 1084px;
     font-size: 1.125em;
   }
@@ -1078,6 +1112,12 @@ p{
 }
 
 @media (min-width: 1124px){
+  .greetings3{
+    text-align: left;
+    font-size: x-large;
+    max-width: 1084px;
+    margin: auto;
+  }
   .introduction{
     margin: auto;
   }
@@ -1087,10 +1127,10 @@ p{
     flex: wrap;
   }
   .dates-and-tuition{
-    margin-right: 50px;
+    min-width: 522px;
   }
   .housing{
-    margin-left: 50px;
+    padding-left: 40px;
   }
   .gallery-container{
     margin: auto;
@@ -1118,7 +1158,7 @@ p{
     margin-left: 337px;
   }
   .events-green{
-    height: 930px;
+    height: 935px;
   }
   .block-click{
     position: absolute;
@@ -1126,14 +1166,14 @@ p{
     transform: translateX(-50%);
     width: 705px;
     height: 30px;
-    top: 882px;
+    top: 260px;
     z-index: 100;
   }
 
   .season-btn{
-    font-size: x-large;
+    font-size: 1.65em;
     width: 165px;
-    top: 45px;
+    top: 55px;
   }
   #fall-btn{
     float: left;
@@ -1181,8 +1221,9 @@ p{
     background-image: linear-gradient(to right, #274a39 50%, rgba(0,0,0,0) 20%);
     left: 50%;
     transform: translateX(-50%);
-    top: 878px;
-    border-radius: 25px;
+    top: 248px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
   }
   .events-container{
     width: 1124px;
@@ -1193,7 +1234,7 @@ p{
   }
 
   .fall-events{
-    top: 955px;
+    top: 324px;
     width: 562px;
     float: left;
     opacity: 1 !important;
@@ -1203,7 +1244,7 @@ p{
   .winter-events{
     width: 50%;
     height: 682px;
-    top: 75px !important;
+    top: 80px !important;
     left: 562px;
     opacity: 1 !important;
     background-color: #a03d3c;
