@@ -312,7 +312,9 @@ function openIftarCards(){
 var adda2ContainerHeight;
 var adda2CardHeight;
 var adda2CardHeightMultipliedByTwo; 
-
+var moveComputedHeight;
+var moveHeight;
+var test;
 
 function openAdda2Cards(){
   if (screenSizeLessThan770 == true && adda2CardsAreOpen != true){
@@ -323,6 +325,8 @@ function openAdda2Cards(){
     document.getElementById("adda2-crowd").style.transitionDuration = "0.5s";
     document.getElementById("adda2-food").style.transitionDuration = "0.5s";
     document.getElementById("adda2-board").style.transitionDuration = "0.5s";
+    document.getElementById("move").style.transitionDuration = "0.5s";
+
 
 
     document.getElementById("adda2-crowd").style.width = "100%";
@@ -337,9 +341,15 @@ function openAdda2Cards(){
     document.getElementById("adda2-board-container").style.top = adda2CardHeightMultipliedByTwo + "px";
     document.getElementById("adda2-board").style.width = "100%";
 
-    adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11 + 60;
+    adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 - 10;
 
-    document.getElementById("adda2-container").style.height = adda2ContainerHeight + "px";
+    test = document.getElementById("adda2-container").offsetHeight * 1.11;
+
+  
+    moveHeight = adda2ContainerHeight - test;
+    
+    document.getElementById("move").style.height = moveHeight + "px";
+    
   }
 
   adda2CardsAreOpen = true;
@@ -406,22 +416,51 @@ function changeIftarCardView(){
 
 function changeAdda2CardView(){
   if (adda2CardsAreOpen == true){
+    document.getElementById("adda2-crowd").onclick = null;
+    document.getElementById("adda2-food").onclick = null;
+    document.getElementById("adda2-board").onclick = null;
+
+
     if (screenSizeLessThan770 == true){
+      document.getElementById("move").style.transitionProperty = "none";
       document.getElementById("adda2-food-container").style.transitionProperty = "none";
       document.getElementById("adda2-board-container").style.transitionProperty = "none";
       document.getElementById("adda2-container").style.transitionProperty = "none";
       adda2CardHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30;
       adda2CardHeightMultipliedByTwo = adda2CardHeight*2 - 30;
-      adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11  + document.getElementById("adda2-crowd").offsetHeight * 1.11;
+      // adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11  + document.getElementById("adda2-crowd").offsetHeight * 1.11;
+      // test = document.getElementById("adda2-container").offsetHeight * 1.11;
+      
+      moveComputedHeight = document.getElementById("move").offsetHeight;
+
+      adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 - 10;
+
+      test = document.getElementById("adda2-container").offsetHeight * 1.11;
+
+      moveHeight = adda2ContainerHeight - test - 60;
+
+      adda2ContainerHeight = test + moveComputedHeight;
+
+
 
       document.getElementById("adda2-food-container").style.top = adda2CardHeight + "px";
       document.getElementById("adda2-board-container").style.top = adda2CardHeightMultipliedByTwo + "px";
-      document.getElementById("adda2-container").style.height = adda2ContainerHeight + "px";
+      document.getElementById("move").style.height = moveHeight + "px";
 
+      
       // document.getElementById("gallery-green").style.backgroundColor = "blue";
       
     } else {
-      
+      document.getElementById("gallery-container").style.transitionProperty = "none";
+      document.getElementById("adda2-crowd-container").style.transitionProperty = "none";
+      document.getElementById("adda2-food-container").style.transitionProperty = "none";
+      document.getElementById("adda2-board-container").style.transitionProperty = "none";
+
+      document.getElementById("adda2-food-container").style.top = "605px";
+      document.getElementById("adda2-board-container").style.top = "1140px";
+      document.getElementById("gallery-container").style.top = "135px";
+      document.getElementById("gallery-pohela").style.top = "165px";
+
     } 
   }
 }
