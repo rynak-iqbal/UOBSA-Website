@@ -88,6 +88,7 @@ y.addListener(checkScreenSizeY) // Attach listener function on state changes
 var cardsAreOpen;
 var fuchkaCardsAreOpen;
 var iftarCardsAreOpen;
+var adda2CardsAreOpen;
 
 // function areCardsOpen(){
 //   if(cardsAreOpen == true){
@@ -247,6 +248,7 @@ changeCardView();
 window.addEventListener("resize", changeCardView);
 window.addEventListener("resize", changeFuchkaCardView);
 window.addEventListener("resize", changeIftarCardView);
+window.addEventListener("resize", changeAdda2CardView);
 
 function openFuchkaCards(){
   if (screenSizeLessThan770 == true){
@@ -307,6 +309,34 @@ function openIftarCards(){
   iftarCardsAreOpen = true;
 }
 
+var adda2ContainerHeight;
+var adda2CardHeight;
+
+function openAdda2Cards(){
+  if (screenSizeLessThan770 == true && adda2CardsAreOpen != true){
+    document.getElementById("adda2-container").style.transitionDuration = "0.5s";
+    document.getElementById("adda2-crowd-container").style.transitionDuration = "0.5s";
+    document.getElementById("adda2-food-container").style.transitionDuration = "0.5s";
+    document.getElementById("adda2-crowd").style.transitionDuration = "0.5s";
+    document.getElementById("adda2-food").style.transitionDuration = "0.5s";
+
+    document.getElementById("adda2-crowd").style.width = "100%";
+
+    adda2CardHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 60;
+
+    document.getElementById("adda2-food-container").style.top = adda2CardHeight + "px";
+    document.getElementById("adda2-food").style.width = "100%";
+
+    adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11 + 60;
+
+    document.getElementById("adda2-container").style.height = adda2ContainerHeight + "px";
+  }
+
+  adda2CardsAreOpen = true;
+}
+
+
+
 function changeFuchkaCardView(){
   if (fuchkaCardsAreOpen == true){
     if (screenSizeLessThan770 == true){
@@ -360,6 +390,25 @@ function changeIftarCardView(){
       document.getElementById("iftar-vid").style.left = "revert";
       document.getElementById("iftar-vid").style.right = "-40px";
       document.getElementById("iftar-vid").style.bottom = "-147px";
+    } 
+  }
+}
+
+function changeAdda2CardView(){
+  if (adda2CardsAreOpen == true){
+    if (screenSizeLessThan770 == true){
+      document.getElementById("adda2-food-container").style.transitionProperty = "none";
+      document.getElementById("adda2-container").style.transitionProperty = "none";
+      adda2CardHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30;
+      adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11;
+
+      document.getElementById("adda2-food-container").style.top = adda2CardHeight + "px";
+      document.getElementById("adda2-container").style.height = adda2ContainerHeight + "px";
+
+      // document.getElementById("gallery-green").style.backgroundColor = "blue";
+      
+    } else {
+      
     } 
   }
 }
