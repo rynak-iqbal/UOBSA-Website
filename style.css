@@ -581,7 +581,7 @@ p{
 
 .gallery-container{
   position: relative;
-  top: 0px;
+  top: 135px;
   margin-left: 20px;
   margin-right: 20px;
   max-width: 1084px;
@@ -590,7 +590,9 @@ p{
 .center-anchor{
   text-align: center;
 }
-
+.adda2-short-title{
+  margin-left: 20px;
+}
 .adda-title{
   text-align: center;
   font-style: italic;
@@ -705,7 +707,7 @@ p{
 
 .adda2-container{
   position: relative;
-  height: 90vw;
+  max-height: 1000px;
 }
 
 .adda2-crowd-container{
@@ -743,7 +745,7 @@ p{
 }
 
 .adda2-board-container{
-  position: absolute;
+  position: relative;
   z-index: 0;
   top: 100px;
   text-align: right;
@@ -757,6 +759,10 @@ p{
   width: 90%;
   height: auto;
   border-radius: 25px;
+}
+
+.move{
+  height: 0px;
 }
 
 .team-subheading{
@@ -839,6 +845,11 @@ p{
   padding-top: 100px;
 }
 
+.space3{
+  position: relative;
+  padding-top: 135px;
+}
+
 .space2{
   position: relative;
   height: 75px;
@@ -899,9 +910,6 @@ p{
 }
 
 @media (min-width: 520px){
-  .adda2-container{
-    height: 467px;
-  }
   .adda2-crowd-container{
     left: 0;
     right: 0;
@@ -950,6 +958,9 @@ p{
   .hero{
     height: 635px;
     padding-top: 0px;
+  }
+  .adda2-short-title{
+    display: none;
   }
   .short-title{
     display: none;
@@ -1070,12 +1081,22 @@ p{
   .gallery-green{
     height: 3210px;
   }
+
+  .gallery-container{
+    top: 1000px;
+  }
   
   .gallery-container h2{
     display: none;
   }
   .gallery-container h4{
     display: none;
+  }
+  .adda2-title:after{
+    position: relative;
+    top: 35px;
+    font-size: 1.7em;
+    content: "Adda Night '23 🧩";
   }
   .adda-title:after{
     position: relative;
@@ -1169,19 +1190,19 @@ p{
   .gallery-pohela{
     position: relative;
     visibility: visible;
-    top: 165px;
+    top: 1030px;
     max-width: 1084px;
     font-size: 1.125em;
   }
   .adda2-container{
-    height: 1000px;
-    top: 170px;
+    height: 635px;
   }
   .adda2-crowd-container{
     margin: auto;
     max-height: none;
     max-width: none;
     width: 740px;
+    top: 70px;
   }
   .adda2-crowd{
     width: 100%;
@@ -1190,7 +1211,7 @@ p{
     max-height: none;
     max-width: none;
     width: 740px;
-    top: 570px;
+    top: 605px;
   }
   .adda2-food{
     width: 100%;
@@ -1199,7 +1220,7 @@ p{
     max-height: none;
     max-width: none;
     width: 740px;
-    top: 1110px;
+    top: 1140px;
   }
   .adda2-board{
     width: 100%;
