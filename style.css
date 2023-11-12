@@ -1081,20 +1081,20 @@ p{
     position: relative;
     top: 35px;
     font-size: 1.7em;
-    content: 'Adda Night 🎲 ←';
+    content: "Adda Night '22 🎲 ←";
     z-index: 9999;
   }
   .fuchka-title:after{
     position: relative;
     top: 60px;
     font-size: 1.7em;
-    content: 'Fuchka Night 🤤';
+    content: "Fuchka Night '22 🤤";
   }
   .iftar-title:after{
     position: relative;
     top: 645px;
     font-size: 1.7em;
-    content: 'Iftar Night 🍽️';
+    content: "Iftar Night '22 🍽️";
   }
   .fuchka-container{
     margin-left: 50%;
