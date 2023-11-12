@@ -703,6 +703,45 @@ p{
   font-style: italic;
 }
 
+.adda2-container{
+  position: relative;
+  height: 80vw;
+}
+
+.adda2-crowd-container{
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 480px;
+  max-height: 320px;
+}
+
+.adda2-crowd{
+  width: 90%;
+  height: auto;
+  border-radius: 25px;
+}
+
+.adda2-food-container{
+  position: absolute;
+  z-index: 0;
+  text-align: right;
+  top: 65px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 480px;
+  max-height: 320px;
+}
+
+
+.adda2-food{
+  width: 90%;
+  height: auto;
+  border-radius: 25px;
+}
+
 .team-subheading{
   position: relative;
   width: 90%;
@@ -815,7 +854,7 @@ p{
   bottom: 722.5px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 90px;
   opacity: 0;
   background-color: #273b3a;
 }
@@ -840,6 +879,22 @@ p{
   margin-left: 20px;
   margin-right: 20px;
   line-height: 1.7;
+}
+
+@media (min-width: 520px){
+  .adda2-container{
+    height: 415px;
+  }
+  .adda2-crowd-container{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .adda2-food-container{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 771px){
@@ -991,7 +1046,7 @@ p{
     padding-bottom: 85px;
   }
   .gallery-green{
-    height: 1555px;
+    height: 2685px;
   }
   
   .gallery-container h2{
@@ -1095,6 +1150,28 @@ p{
     top: 165px;
     max-width: 1084px;
     font-size: 1.125em;
+  }
+  .adda2-container{
+    height: 1000px;
+    top: 170px;
+  }
+  .adda2-crowd-container{
+    margin: auto;
+    max-height: none;
+    max-width: none;
+    width: 740px;
+  }
+  .adda2-crowd{
+    width: 100%;
+  }
+  .adda2-food-container{
+    max-height: none;
+    max-width: none;
+    width: 740px;
+    top: 570px;
+  }
+  .adda2-food{
+    width: 100%;
   }
   .space{
     height: 110px;
