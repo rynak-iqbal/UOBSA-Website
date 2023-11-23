@@ -329,6 +329,46 @@ p{
   object-fit: inherit;
 }
 
+.mehndi-grid{
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.mehndi-grid > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mehndi-grid-col-2{
+  grid-column: span 2;
+}
+
+.mehndi-grid-row-2{
+  grid-row: span 2;
+}
+
+.mehndi-left-rounded-corners{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.mehndi-top-right-rounded-corner{
+  border-top-right-radius: 25px;
+}
+
+.mehndi-bottom-right-rounded-corner{
+  border-bottom-right-radius: 25px;
+}
+
 .card-container{
   position: relative;
   width: 300px;
@@ -1238,6 +1278,24 @@ p{
   #topbar a{
     right: 75px;
   }
+}
+
+@media screen and (max-width: 1024px){
+  .mehndi-grid{
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+  .mehndi-top-right-rounded-corner{
+    border-top-right-radius: 0px;
+  }
+  .mehndi-left-rounded-corners{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 25px;
+  }
+  .mehndi-bottom-left-rounded-corner{
+    border-bottom-left-radius: 25px;
+  }
+
 }
 
 @media (min-width: 1124px){
