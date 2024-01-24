@@ -433,7 +433,8 @@ p{
 .introduction2{
   position: relative;
   padding-top: 10px;
-  bottom: 130px;
+  bottom: 25px;
+  padding-bottom: 105px;
 
 }
 
@@ -625,6 +626,7 @@ p{
   margin-left: 20px;
   margin-right: 20px;
   max-width: 1084px;
+  padding-bottom: 10px;
 }
 
 .center-anchor{
@@ -635,12 +637,48 @@ p{
 }
 .adda-title{
   text-align: center;
-  font-style: italic;
 }
 
 .iftar-title{
   position: relative;
   top: 0px;
+}
+
+.adda-new-container{
+  width: 320px;
+  margin: auto;
+  height: 530px;
+}
+
+.adda-night-new{
+  position: relative;
+  width: 290px;
+  top: 30px;
+  left: 0;
+  object-fit: cover;
+  aspect-ratio: 2/3;
+  border-radius: 25px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.adda-night-new:hover{
+  cursor: pointer;
+}
+
+.adda-group-new{
+  position: relative;
+  width: 290px;
+  left: 30px;
+  bottom: 370px;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.adda-group-new:hover{
+  cursor: pointer;
 }
 
 
@@ -1067,8 +1105,8 @@ p{
     bottom: -75px;
   }
   .introduction2{
-    top: 65px;
-    padding-bottom: 225px;
+    top: -25px;
+    padding-bottom: 135px;
   }
   .introduction2-normal{
     font-size: large;
@@ -1119,7 +1157,7 @@ p{
     padding-bottom: 85px;
   }
   .gallery-green{
-    height: 3210px;
+    height: 3770px;
   }
 
   .gallery-container{
@@ -1142,20 +1180,42 @@ p{
     position: relative;
     top: 35px;
     font-size: 1.7em;
-    content: "Adda Night '22 🎲 ←";
+    content: "Adda Night '22 🎲 ";
     z-index: 9999;
   }
   .fuchka-title:after{
     position: relative;
-    top: 60px;
+    top: 620px;
     font-size: 1.7em;
     content: "Fuchka Night '22 🤤";
   }
   .iftar-title:after{
     position: relative;
-    top: 645px;
+    top: 1200px;
     font-size: 1.7em;
     content: "Iftar Night '22 🍽️";
+  }
+  .adda-new-container{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 730px;
+    height: 530px;
+  }
+  .adda-night-new{
+    width: 345px;
+    top: 0px;
+  }
+  .adda-night-new:hover{
+    cursor: default;
+  }
+  .adda-group-new{
+    width: 345px;
+    bottom: 0px;
+    left: revert;
+    right: -40px;
+  }
+  .adda-group-new:hover{
+    cursor: default;
   }
   .fuchka-container{
     margin-left: 50%;
@@ -1165,14 +1225,19 @@ p{
   }
   .fuchka-night{
     width: 345px;
-    top: 60px;
+    top: 85px;
+  }
+  .fuchka-night:hover{
     cursor: default;
   }
   .fuchka-group{
     width: 345px;
-    bottom: -60px;
+    bottom: -85px;
     left: revert;
     right: -40px;
+  }
+
+  .fuchka-group:hover{
     cursor: default;
   }
   .iftar-container{
@@ -1182,14 +1247,19 @@ p{
   }
   .iftar-night{
     width: 345px;
-    top: 147px;
+    top: 172px;
+  }
+  .iftar-night:hover{
     cursor: default;
   }
   .iftar-vid{
     width: 345px;
-    bottom: -147px;
+    bottom: -172px;
     left: revert;
     right: -40px;
+  }
+  
+  .iftar-vid:hover{
     cursor: default;
   }
 
@@ -1230,7 +1300,7 @@ p{
   .gallery-pohela{
     position: relative;
     visibility: visible;
-    top: 1030px;
+    top: 1050px;
     max-width: 1084px;
     font-size: 1.125em;
   }
@@ -1326,7 +1396,7 @@ p{
     margin: auto;
   }
   .introduction2{
-    padding-bottom: 110px;
+    padding-bottom: 20px;
     margin: auto;
   }
   .introduction2-normal{
@@ -1476,3 +1546,4 @@ p{
     margin: auto;
   }
 }
+
