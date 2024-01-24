@@ -86,6 +86,7 @@ y.addListener(checkScreenSizeY) // Attach listener function on state changes
 
 
 var cardsAreOpen;
+var addaNewCardsAreOpen;
 var fuchkaCardsAreOpen;
 var iftarCardsAreOpen;
 var adda2CardsAreOpen;
@@ -246,9 +247,40 @@ function changeCardView(){
 
 changeCardView();
 window.addEventListener("resize", changeCardView);
+window.addEventListener("resize", changeAddaNewCardView);
 window.addEventListener("resize", changeFuchkaCardView);
 window.addEventListener("resize", changeIftarCardView);
 window.addEventListener("resize", changeAdda2CardView);
+
+function openAddaNewCards(){
+  if (screenSizeLessThan770 == true){
+    document.getElementById("adda-new-container").style.transitionDuration = "0.5s";
+    document.getElementById("adda-night-new").style.transitionDuration = "0.5s";
+    document.getElementById("adda-group-new").style.transitionDuration = "0.5s";
+    document.getElementById("adda-new-container").style.height = "1050px";
+    document.getElementById("adda-night-new").style.width = "320px";
+    document.getElementById("adda-group-new").style.bottom = "-60px";
+    document.getElementById("adda-group-new").style.left = "0";
+    document.getElementById("adda-group-new").style.width = "320px";
+    document.getElementById("adda-night-new").style.cursor = "default";
+    document.getElementById("adda-group-new").style.cursor = "default";
+  // } else {
+  //   document.getElementById("fuchka-container").style.transitionDuration = "0.5s";
+  //   document.getElementById("fuchka-group").style.transitionDuration = "0.5s";
+  //   document.getElementById("fuchka-title").style.transitionDuration = "0.5s";
+  //   document.getElementById("fuchka-container").style.marginLeft = "50%";
+  //   document.getElementById("fuchka-container").style.transform = "translateX(-50%)";
+  //   document.getElementById("fuchka-group").style.right = "-40px";
+  //   document.getElementById("fuchka-group").style.bottom = "-10px";
+  //   document.getElementById("fuchka-title").style.opacity = "0";
+  //   document.getElementById("fuchka-night").style.cursor = "default";
+  //   document.getElementById("fuchka-group").style.cursor = "default";
+  // }
+
+  }
+
+  addaNewCardsAreOpen = true;
+}
 
 function openFuchkaCards(){
   if (screenSizeLessThan770 == true){
@@ -355,6 +387,35 @@ function openAdda2Cards(){
   adda2CardsAreOpen = true;
 }
 
+function changeAddaNewCardView(){
+  if (addaNewCardsAreOpen == true){
+    if (screenSizeLessThan770 == true){
+      document.getElementById("adda-new-container").style.transitionProperty = "none";
+      document.getElementById("adda-night-new").style.transitionProperty = "none";
+      document.getElementById("adda-group-new").style.transitionProperty = "none";
+      document.getElementById("adda-new-container").style.height = "1050px";
+      document.getElementById("adda-new-container").style.margin = "auto";
+      document.getElementById("adda-new-container").style.transform = "none";
+      document.getElementById("adda-night-new").style.width = "320px";
+      document.getElementById("adda-group-new").style.bottom = "-60px";
+      document.getElementById("adda-group-new").style.left = "0";
+      document.getElementById("adda-group-new").style.right = "revert";
+      document.getElementById("adda-group-new").style.width = "320px";
+    } else {
+      document.getElementById("adda-new-container").style.transitionProperty = "none";
+      document.getElementById("adda-night-new").style.transitionProperty = "none";
+      document.getElementById("adda-group-new").style.transitionProperty = "none";
+      document.getElementById("adda-new-container").style.height = "530px";
+      document.getElementById("adda-night-new").style.width = "345px";
+      document.getElementById("adda-group-new").style.width = "345px";
+      document.getElementById("adda-group-new").style.left = "revert";
+      document.getElementById("adda-group-new").style.right = "-40px";
+      document.getElementById("adda-group-new").style.bottom = "0px";
+      
+    } 
+  }
+}
+
 
 
 function changeFuchkaCardView(){
@@ -380,7 +441,7 @@ function changeFuchkaCardView(){
       document.getElementById("fuchka-group").style.width = "345px";
       document.getElementById("fuchka-group").style.left = "revert";
       document.getElementById("fuchka-group").style.right = "-40px";
-      document.getElementById("fuchka-group").style.bottom = "-60px";
+      document.getElementById("fuchka-group").style.bottom = "-85px";
       
     } 
   }
@@ -409,7 +470,7 @@ function changeIftarCardView(){
       document.getElementById("iftar-vid").style.width = "345px";
       document.getElementById("iftar-vid").style.left = "revert";
       document.getElementById("iftar-vid").style.right = "-40px";
-      document.getElementById("iftar-vid").style.bottom = "-147px";
+      document.getElementById("iftar-vid").style.bottom = "-172px";
     } 
   }
 }
