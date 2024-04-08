@@ -788,7 +788,37 @@ p{
   max-height: 1000px;
 }
 
+.cholo-container{
+  position: relative;
+  max-height: 1000px;
+}
+
+.iftar24-container{
+  position: relative;
+  max-height: 1000px;
+}
+
 .adda2-crowd-container{
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 480px;
+  max-height: 320px;
+}
+
+.cholo1-container{
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 480px;
+  max-height: 320px;
+}
+
+.iftar24-1-container{
   position: absolute;
   z-index: 2;
   top: 30px;
@@ -804,6 +834,22 @@ p{
   border-radius: 25px;
 }
 
+.cholo1{
+  width: 90%;
+  height: auto;
+  border-radius: 25px;
+  aspect-ratio: 6/4;
+  object-fit: cover;
+}
+
+.iftar24-1{
+  width: 90%;
+  height: auto;
+  border-radius: 25px;
+  aspect-ratio: 6/4;
+  object-fit: cover;
+}
+
 .adda2-food-container{
   position: absolute;
   z-index: 1;
@@ -815,6 +861,27 @@ p{
   max-height: 320px;
 }
 
+.cholo2-container{
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  top: 65px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 480px;
+  max-height: 320px;
+}
+
+.iftar24-2-container{
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  top: 65px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 480px;
+  max-height: 320px;
+}
 
 .adda2-food{
   width: 90%;
@@ -822,7 +889,45 @@ p{
   border-radius: 25px;
 }
 
+.cholo2{
+  width: 90%;
+  height: auto;
+  border-radius: 25px;
+  aspect-ratio: 6/4;
+  object-fit: cover;
+}
+
+.iftar24-2{
+  width: 90%;
+  height: auto;
+  border-radius: 25px;
+  aspect-ratio: 6/4;
+  object-fit: cover;
+}
+
 .adda2-board-container{
+  position: relative;
+  z-index: 0;
+  top: 100px;
+  text-align: right;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 480px;
+  max-height: 320px;
+}
+
+.cholo3-container{
+  position: relative;
+  z-index: 0;
+  top: 100px;
+  text-align: right;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 480px;
+  max-height: 320px;
+}
+
+.iftar24-3-container{
   position: relative;
   z-index: 0;
   top: 100px;
@@ -839,7 +944,31 @@ p{
   border-radius: 25px;
 }
 
+.cholo3{
+  width: 90%;
+  height: auto;
+  border-radius: 25px;
+  aspect-ratio: 6/4;
+  object-fit: cover;
+}
+
+.iftar24-3{
+  width: 90%;
+  height: auto;
+  border-radius: 25px;
+  aspect-ratio: 6/4;
+  object-fit: cover;
+}
+
 .move{
+  height: 0px;
+}
+
+.move2{
+  height: 0px;
+}
+
+.move3{
   height: 0px;
 }
 
@@ -923,6 +1052,10 @@ p{
   padding-top: 100px;
 }
 
+.space5{
+  padding-top: 130px;
+}
+
 .space3{
   position: relative;
   padding-top: 135px;
@@ -993,12 +1126,42 @@ p{
     right: 0;
     margin: 0 auto;
   }
+  .cholo1-container{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .iftar24-1-container{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
   .adda2-food-container{
     left: 0;
     right: 0;
     margin: 0 auto;
   }
+  .cholo2-container{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .iftar24-2-container{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
   .adda2-board-container{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .cholo3-container{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .iftar24-3-container{
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -1157,11 +1320,11 @@ p{
     padding-bottom: 85px;
   }
   .gallery-green{
-    height: 3770px;
+    height: 7100px;
   }
 
   .gallery-container{
-    top: 1000px;
+    top: 2730px;
   }
   
   .gallery-container h2{
@@ -1175,6 +1338,19 @@ p{
     top: 35px;
     font-size: 1.7em;
     content: "Adda Night '23 🧩";
+  }
+  .cholo-title:after{
+    position: relative;
+    top: 905px;
+    font-size: 1.7em;
+    content: "Cholo Kheli";
+  }
+
+  .iftar24-title:after{
+    position: relative;
+    top: 1770px;
+    font-size: 1.7em;
+    content: "Iftar Night '23";
   }
   .adda-title:after{
     position: relative;
@@ -1300,11 +1476,17 @@ p{
   .gallery-pohela{
     position: relative;
     visibility: visible;
-    top: 1050px;
+    top: 2780px;
     max-width: 1084px;
     font-size: 1.125em;
   }
   .adda2-container{
+    height: 635px;
+  }
+  .cholo-container{
+    height: 635px;
+  }
+  .iftar24-container{
     height: 635px;
   }
   .adda2-crowd-container{
@@ -1314,7 +1496,27 @@ p{
     width: 740px;
     top: 70px;
   }
+  .cholo1-container{
+    margin: auto;
+    max-height: none;
+    max-width: none;
+    width: 740px;
+    top: 940px;
+  }
+  .iftar24-1-container{
+    margin: auto;
+    max-height: none;
+    max-width: none;
+    width: 740px;
+    top: 1805px;
+  }
   .adda2-crowd{
+    width: 100%;
+  }
+  .cholo1{
+    width: 100%;
+  }
+  .iftar24-1{
     width: 100%;
   }
   .adda2-food-container{
@@ -1323,7 +1525,25 @@ p{
     width: 740px;
     top: 605px;
   }
+  .cholo2-container{
+    max-height: none;
+    max-width: none;
+    width: 740px;
+    top: 1475px;
+  }
+  .iftar24-2-container{
+    max-height: none;
+    max-width: none;
+    width: 740px;
+    top: 2340px;
+  }
   .adda2-food{
+    width: 100%;
+  }
+  .cholo2{
+    width: 100%;
+  }
+  .iftar24-2{
     width: 100%;
   }
   .adda2-board-container{
@@ -1332,7 +1552,25 @@ p{
     width: 740px;
     top: 1140px;
   }
+  .cholo3-container{
+    max-height: none;
+    max-width: none;
+    width: 740px;
+    top: 2010px;
+  }
+  .iftar24-3-container{
+    max-height: none;
+    max-width: none;
+    width: 740px;
+    top: 2875px;
+  }
   .adda2-board{
+    width: 100%;
+  }
+  .cholo3{
+    width: 100%;
+  }
+  .iftar24-3{
     width: 100%;
   }
   .space{
