@@ -90,6 +90,8 @@ var addaNewCardsAreOpen;
 var fuchkaCardsAreOpen;
 var iftarCardsAreOpen;
 var adda2CardsAreOpen;
+var choloCardsAreOpen;
+var iftar24CardsAreOpen;
 
 // function areCardsOpen(){
 //   if(cardsAreOpen == true){
@@ -251,6 +253,8 @@ window.addEventListener("resize", changeAddaNewCardView);
 window.addEventListener("resize", changeFuchkaCardView);
 window.addEventListener("resize", changeIftarCardView);
 window.addEventListener("resize", changeAdda2CardView);
+window.addEventListener("resize", changeCholoCardView);
+window.addEventListener("resize", changeIftar24CardView);
 
 function openAddaNewCards(){
   if (screenSizeLessThan770 == true){
@@ -387,6 +391,82 @@ function openAdda2Cards(){
   adda2CardsAreOpen = true;
 }
 
+function openCholoCards(){
+  if (screenSizeLessThan770 == true && choloCardsAreOpen != true){
+    document.getElementById("cholo-container").style.transitionDuration = "0.5s";
+    document.getElementById("cholo1-container").style.transitionDuration = "0.5s";
+    document.getElementById("cholo2-container").style.transitionDuration = "0.5s";
+    document.getElementById("cholo3-container").style.transitionDuration = "0.5s";
+    document.getElementById("cholo1").style.transitionDuration = "0.5s";
+    document.getElementById("cholo2").style.transitionDuration = "0.5s";
+    document.getElementById("cholo3").style.transitionDuration = "0.5s";
+    document.getElementById("move2").style.transitionDuration = "0.5s";
+
+
+
+    document.getElementById("cholo1").style.width = "100%";
+
+    choloCardHeight = document.getElementById("cholo1").offsetHeight * 1.11 + 60;
+
+    choloCardHeightMultipliedByTwo = choloCardHeight*2 - 30;
+
+    document.getElementById("cholo2-container").style.top = choloCardHeight + "px";
+    document.getElementById("cholo2").style.width = "100%";
+
+    document.getElementById("cholo3-container").style.top = choloCardHeightMultipliedByTwo + "px";
+    document.getElementById("cholo3").style.width = "100%";
+
+    choloContainerHeight = document.getElementById("cholo1").offsetHeight * 1.11 + document.getElementById("cholo1").offsetHeight * 1.11 + document.getElementById("cholo1").offsetHeight * 1.11 - 10;
+
+    test = document.getElementById("cholo-container").offsetHeight * 1.11;
+
+  
+    moveHeight = choloContainerHeight - test;
+    
+    document.getElementById("move2").style.height = moveHeight + "px";
+  }
+
+  choloCardsAreOpen = true;
+}
+
+function openIftar24Cards(){
+  if (screenSizeLessThan770 == true && iftar24CardsAreOpen != true){
+    document.getElementById("iftar24-container").style.transitionDuration = "0.5s";
+    document.getElementById("iftar24-1-container").style.transitionDuration = "0.5s";
+    document.getElementById("iftar24-2-container").style.transitionDuration = "0.5s";
+    document.getElementById("iftar24-3-container").style.transitionDuration = "0.5s";
+    document.getElementById("iftar24-1").style.transitionDuration = "0.5s";
+    document.getElementById("iftar24-2").style.transitionDuration = "0.5s";
+    document.getElementById("iftar24-3").style.transitionDuration = "0.5s";
+    document.getElementById("move3").style.transitionDuration = "0.5s";
+
+
+
+    document.getElementById("iftar24-1").style.width = "100%";
+
+    iftar24CardHeight = document.getElementById("iftar24-1").offsetHeight * 1.11 + 60;
+
+    iftar24CardHeightMultipliedByTwo = iftar24CardHeight*2 - 30;
+
+    document.getElementById("iftar24-2-container").style.top = iftar24CardHeight + "px";
+    document.getElementById("iftar24-2").style.width = "100%";
+
+    document.getElementById("iftar24-3-container").style.top = iftar24CardHeightMultipliedByTwo + "px";
+    document.getElementById("iftar24-3").style.width = "100%";
+
+    iftar24ContainerHeight = document.getElementById("iftar24-1").offsetHeight * 1.11 + document.getElementById("iftar24-1").offsetHeight * 1.11 + document.getElementById("iftar24-1").offsetHeight * 1.11 - 10;
+
+    test = document.getElementById("iftar24-container").offsetHeight * 1.11;
+
+  
+    moveHeight = iftar24ContainerHeight - test;
+    
+    document.getElementById("move3").style.height = moveHeight + "px";
+  }
+
+  iftar24CardsAreOpen = true;
+}
+
 function changeAddaNewCardView(){
   if (addaNewCardsAreOpen == true){
     if (screenSizeLessThan770 == true){
@@ -506,7 +586,7 @@ function changeAdda2CardView(){
 
       document.getElementById("adda2-food-container").style.top = adda2CardHeight + "px";
       document.getElementById("adda2-board-container").style.top = adda2CardHeightMultipliedByTwo + "px";
-      document.getElementById("move").style.height = moveHeight + "px";
+      // document.getElementById("move").style.height = moveHeight + "px";
 
       
       // document.getElementById("gallery-green").style.backgroundColor = "blue";
@@ -517,14 +597,110 @@ function changeAdda2CardView(){
       document.getElementById("adda2-food-container").style.transitionProperty = "none";
       document.getElementById("adda2-board-container").style.transitionProperty = "none";
 
-      document.getElementById("adda2-food-container").style.top = "605px";
-      document.getElementById("adda2-board-container").style.top = "1140px";
-      document.getElementById("gallery-container").style.top = "135px";
-      document.getElementById("gallery-pohela").style.top = "165px";
+      
 
     } 
   }
 }
+
+function changeCholoCardView(){
+  if (choloCardsAreOpen == true){
+    document.getElementById("cholo1").onclick = null;
+    document.getElementById("cholo2").onclick = null;
+    document.getElementById("cholo3").onclick = null;
+
+
+    if (screenSizeLessThan770 == true){
+      document.getElementById("move2").style.transitionProperty = "none";
+      document.getElementById("cholo2-container").style.transitionProperty = "none";
+      document.getElementById("cholo3-container").style.transitionProperty = "none";
+      document.getElementById("cholo-container").style.transitionProperty = "none";
+      adda2CardHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30;
+      adda2CardHeightMultipliedByTwo = adda2CardHeight*2 - 30;
+      // adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11  + document.getElementById("adda2-crowd").offsetHeight * 1.11;
+      // test = document.getElementById("adda2-container").offsetHeight * 1.11;
+      
+      moveComputedHeight = document.getElementById("move").offsetHeight;
+
+      adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 - 10;
+
+      test = document.getElementById("adda2-container").offsetHeight * 1.11;
+
+      moveHeight = adda2ContainerHeight - test - 60;
+
+      adda2ContainerHeight = test + moveComputedHeight;
+
+
+
+      document.getElementById("cholo2-container").style.top = adda2CardHeight + "px";
+      document.getElementById("cholo3-container").style.top = adda2CardHeightMultipliedByTwo + "px";
+      // document.getElementById("move2").style.height = moveHeight + "px";
+
+      
+      // document.getElementById("gallery-green").style.backgroundColor = "blue";
+      
+    } else {
+      document.getElementById("gallery-container").style.transitionProperty = "none";
+      document.getElementById("cholo1-container").style.transitionProperty = "none";
+      document.getElementById("cholo2-container").style.transitionProperty = "none";
+      document.getElementById("cholo3-container").style.transitionProperty = "none";
+
+
+
+    } 
+  }
+}
+
+function changeIftar24CardView(){
+  if (choloCardsAreOpen == true){
+    document.getElementById("iftar24-1").onclick = null;
+    document.getElementById("iftar24-2").onclick = null;
+    document.getElementById("iftar24-3").onclick = null;
+
+
+    if (screenSizeLessThan770 == true){
+      document.getElementById("move3").style.transitionProperty = "none";
+      document.getElementById("iftar24-2-container").style.transitionProperty = "none";
+      document.getElementById("iftar24-3-container").style.transitionProperty = "none";
+      document.getElementById("iftar24-container").style.transitionProperty = "none";
+      adda2CardHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30;
+      adda2CardHeightMultipliedByTwo = adda2CardHeight*2 - 30;
+      // adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11  + document.getElementById("adda2-crowd").offsetHeight * 1.11;
+      // test = document.getElementById("adda2-container").offsetHeight * 1.11;
+      
+      moveComputedHeight = document.getElementById("move").offsetHeight;
+
+      adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 - 10;
+
+      test = document.getElementById("adda2-container").offsetHeight * 1.11;
+
+      moveHeight = adda2ContainerHeight - test - 60;
+
+      adda2ContainerHeight = test + moveComputedHeight;
+
+
+
+      document.getElementById("iftar24-2-container").style.top = adda2CardHeight + "px";
+      document.getElementById("iftar24-3-container").style.top = adda2CardHeightMultipliedByTwo + "px";
+      document.getElementById("move3").style.height = moveHeight + "px";
+
+      
+      // document.getElementById("gallery-green").style.backgroundColor = "blue";
+      
+    } else {
+      document.getElementById("gallery-container").style.transitionProperty = "none";
+      document.getElementById("iftar24-1-container").style.transitionProperty = "none";
+      document.getElementById("iftar24-2-container").style.transitionProperty = "none";
+      document.getElementById("iftar24-3-container").style.transitionProperty = "none";
+
+      document.getElementById("iftar24-2-container").style.top = "2340px";
+      document.getElementById("iftar24-3-container").style.top = "2875px";
+
+
+    } 
+  }
+}
+
 
 
 // function changeCardView() {
