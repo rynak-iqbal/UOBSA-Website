@@ -567,7 +567,7 @@ function changeAdda2CardView(){
       document.getElementById("adda2-food-container").style.transitionProperty = "none";
       document.getElementById("adda2-board-container").style.transitionProperty = "none";
       document.getElementById("adda2-container").style.transitionProperty = "none";
-      adda2CardHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30;
+      adda2CardHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 - 5.5;
       adda2CardHeightMultipliedByTwo = adda2CardHeight*2 - 30;
       // adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11  + document.getElementById("adda2-crowd").offsetHeight * 1.11;
       // test = document.getElementById("adda2-container").offsetHeight * 1.11;
@@ -615,18 +615,18 @@ function changeCholoCardView(){
       document.getElementById("cholo2-container").style.transitionProperty = "none";
       document.getElementById("cholo3-container").style.transitionProperty = "none";
       document.getElementById("cholo-container").style.transitionProperty = "none";
-      adda2CardHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 60;
+      adda2CardHeight = document.getElementById("cholo1").offsetHeight * 1.11 + 24.5;
       adda2CardHeightMultipliedByTwo = adda2CardHeight*2 - 30;
       // adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11  + document.getElementById("adda2-crowd").offsetHeight * 1.11;
       // test = document.getElementById("adda2-container").offsetHeight * 1.11;
       
-      moveComputedHeight = document.getElementById("move").offsetHeight;
+      moveComputedHeight = document.getElementById("move2").offsetHeight;
 
-      adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 - 10;
+      adda2ContainerHeight = document.getElementById("cholo1").offsetHeight * 1.11 + document.getElementById("cholo1").offsetHeight * 1.11 + document.getElementById("cholo1").offsetHeight * 1.11 - 10;
 
       test = document.getElementById("adda2-container").offsetHeight * 1.11;
 
-      moveHeight = adda2ContainerHeight - test;
+      moveHeight = adda2ContainerHeight - test - 35.5 - 71 + 32;
 
       adda2ContainerHeight = test + moveComputedHeight;
 
@@ -664,18 +664,18 @@ function changeIftar24CardView(){
       document.getElementById("iftar24-2-container").style.transitionProperty = "none";
       document.getElementById("iftar24-3-container").style.transitionProperty = "none";
       document.getElementById("iftar24-container").style.transitionProperty = "none";
-      adda2CardHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 60;
+      adda2CardHeight = document.getElementById("iftar24-1").offsetHeight * 1.11 + 24.5;
       adda2CardHeightMultipliedByTwo = adda2CardHeight*2 - 30;
       // adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11  + document.getElementById("adda2-crowd").offsetHeight * 1.11;
       // test = document.getElementById("adda2-container").offsetHeight * 1.11;
       
-      moveComputedHeight = document.getElementById("move").offsetHeight;
+      moveComputedHeight = document.getElementById("move3").offsetHeight;
 
-      adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 + document.getElementById("adda2-crowd").offsetHeight * 1.11 - 10;
+      adda2ContainerHeight = document.getElementById("iftar24-1").offsetHeight * 1.11 + document.getElementById("iftar24-1").offsetHeight * 1.11 + document.getElementById("iftar24-1").offsetHeight * 1.11 - 10;
 
-      test = document.getElementById("adda2-container").offsetHeight * 1.11;
+      test = document.getElementById("iftar24-container").offsetHeight * 1.11;
 
-      moveHeight = adda2ContainerHeight - test;
+      moveHeight = adda2ContainerHeight - test - 74.37;
 
       adda2ContainerHeight = test + moveComputedHeight;
 
