@@ -664,7 +664,7 @@ function changeIftar24CardView(){
       document.getElementById("iftar24-2-container").style.transitionProperty = "none";
       document.getElementById("iftar24-3-container").style.transitionProperty = "none";
       document.getElementById("iftar24-container").style.transitionProperty = "none";
-      adda2CardHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30;
+      adda2CardHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 60;
       adda2CardHeightMultipliedByTwo = adda2CardHeight*2 - 30;
       // adda2ContainerHeight = document.getElementById("adda2-crowd").offsetHeight * 1.11 + 30 + document.getElementById("adda2-crowd").offsetHeight * 1.11  + document.getElementById("adda2-crowd").offsetHeight * 1.11;
       // test = document.getElementById("adda2-container").offsetHeight * 1.11;
@@ -675,7 +675,7 @@ function changeIftar24CardView(){
 
       test = document.getElementById("adda2-container").offsetHeight * 1.11;
 
-      moveHeight = adda2ContainerHeight - test - 60;
+      moveHeight = adda2ContainerHeight - test;
 
       adda2ContainerHeight = test + moveComputedHeight;
 
