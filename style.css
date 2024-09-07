@@ -615,6 +615,7 @@ p{
   text-align: center;
   padding-top: 25px;
   /* top: 300px; */
+  z-index: 10000;
 }
 
 .socials2 a{
@@ -1313,7 +1314,7 @@ p{
     right: 55px;
     text-align: right;
     font-size: large;
-    z-index: 5;
+    z-index: 0;
   }
   .caption{
     font-size: large;
@@ -1695,7 +1696,7 @@ p{
     margin-left: 337px;
   }
   .events-green{
-    height: 935px;
+    height: 1268px;
   }
   .block-click{
     position: absolute;
@@ -1772,7 +1773,7 @@ p{
 
   .fall-events{
     top: 324px;
-    height: 687px;
+    height: 1020px;
     width: 562px;
     float: left;
     opacity: 1 !important;
@@ -1781,7 +1782,7 @@ p{
   }
   .winter-events{
     width: 50%;
-    height: 687px;
+    height: 1020px;
     top: 80px !important;
     left: 562px;
     opacity: 1 !important;
