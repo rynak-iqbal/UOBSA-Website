@@ -615,7 +615,7 @@ p{
   text-align: center;
   padding-top: 25px;
   /* top: 300px; */
-  z-index: 10000;
+  z-index: 1;
 }
 
 .socials2 a{
