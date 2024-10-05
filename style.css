@@ -615,11 +615,7 @@ p{
   text-align: center;
   padding-top: 25px;
   /* top: 300px; */
-<<<<<<< HEAD
-  z-index: 10000;
-=======
   z-index: 1;
->>>>>>> fa1a8fafe01d480fa0a54e9ca9a9c6edd9dc01d8
 }
 
 .socials2 a{
@@ -1905,4 +1901,35 @@ p{
   width: 100%;
   border-radius: 25px;
 }
+
+.swirl {
+  display: inline-block;
+}
+
+.swirl span {
+  display: inline-block;
+  animation: swirl 1.5s infinite ease-in-out;
+}
+
+@keyframes swirl {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+}
+
+/* Delay each letter's animation for a smooth wave effect */
+.swirl span:nth-child(1) { animation-delay: 0s; }
+.swirl span:nth-child(2) { animation-delay: 0.1s; }
+.swirl span:nth-child(3) { animation-delay: 0.2s; }
+.swirl span:nth-child(4) { animation-delay: 0.3s; }
+.swirl span:nth-child(5) { animation-delay: 0.4s; }
+.swirl span:nth-child(6) { animation-delay: 0.5s; }
+.swirl span:nth-child(7) { animation-delay: 0.6s; }
+.swirl span:nth-child(8) { animation-delay: 0.7s; }
+.swirl span:nth-child(9) { animation-delay: 0.8s; }
+.swirl span:nth-child(10) { animation-delay: 0.9s; }
+.swirl span:nth-child(11) { animation-delay: 1s; }
 
