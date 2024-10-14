@@ -1,6 +1,6 @@
 # UOBSA Website
 
-Welcome to the official repository for the University of Ottawa's Bangladeshi Students' Association (UOBSA). I created this website to provide a one-stop shop for all of our club's activities. It is built using HTML, CSS, and JavaScript, and aims to provide an engaging experience for both current and prospective club members.
+Welcome to the official repository for the University of Ottawa's Bangladeshi Students' Association (UOBSA) Website. I created this website to provide a one-stop shop for all of our club's activities. It is built using HTML, CSS, and JavaScript, and aims to provide an engaging experience for both current and prospective club members.
 
 ## Table of Contents
 
