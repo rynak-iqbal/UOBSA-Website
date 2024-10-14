@@ -18,11 +18,11 @@ This project allows UOBSA members to stay updated on all of the club's initiativ
 
 ## Features
 
-- **Home Page**: A brief introduction to the club and its mission.
-- **About Us**: Learn about the club's history, goals, and achievements.
-- **Events**: A calendar of upcoming events with descriptions and details.
-- **Gallery**: A photo gallery showcasing moments from past events.
-- **Contact**: Get in touch with club organizers for more information or to join.
+- **Home Page**: An introduction to the club and our mission.
+- **Events**: A calendar of our upcoming events.
+- **Gallery**: A gallery of our past events.
+- **Team**: An overview of our team.
+- **Resources**: A comprehensive list of resources pertinent to Bangladeshi students living in Ottawa.
 
 ## Technologies Used
 
