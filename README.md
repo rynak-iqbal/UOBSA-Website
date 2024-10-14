@@ -1,4 +1,4 @@
-# University Club Website
+# UOBSA Website
 
 Welcome to the official repository for the University of Ottawa's Bangladeshi Students' Association (UOBSA). I created this website to provide a one-stop shop for all of our club's activities. It is built using HTML, CSS, and JavaScript, and aims to provide an engaging experience for both current and prospective club members.
 
@@ -14,7 +14,7 @@ Welcome to the official repository for the University of Ottawa's Bangladeshi St
 
 ## About the Project
 
-This project allows UOBSA members to stay updated on all of the club's initiatives. Prospective members can get an idea of what our club is about upon visiting our homepage, where they can sign up to become a general member, as well as navigate to a variety of other pages.
+This project allows UOBSA members to stay updated on all of the club's initiatives. Prospective members can get an idea of what our club is about upon visiting our homepage, where they can sign up to become a general member, as well as navigate to a variety of useful pages.
 
 ## Features
 
@@ -22,7 +22,7 @@ This project allows UOBSA members to stay updated on all of the club's initiativ
 - **Events**: A calendar of our upcoming events.
 - **Gallery**: A gallery of our past events.
 - **Team**: An overview of our team.
-- **Resources**: A comprehensive list of resources pertinent to Bangladeshi students living in Ottawa.
+- **Resources**: A list of resources pertinent to Bangladeshi students living in Ottawa.
 
 ## Technologies Used
 
@@ -42,12 +42,12 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-club-website.git
+   git clone https://github.com/rynak-iqbal/UOBSA-Website.git
    ```
 
 2. Open the project directory:
    ```bash
-   cd your-club-website
+   cd UOBSA-Website
    ```
 
 3. Open `index.html` in your browser to view the website:
