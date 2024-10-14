@@ -590,6 +590,7 @@ p{
 }
 
 .copyright{
+  z-index: 1;
   position: relative;
   top: 80px;
 }
