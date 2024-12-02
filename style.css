@@ -490,6 +490,26 @@ p{
   background-color: #a03d3c;
 }
 
+.sign-up-btn{
+  position: relative;
+  top: 27px;
+  margin: auto;
+  width: 150px;
+  text-align: center;
+  border-width: 2px; 
+  border-style: solid; 
+  border-color: white; 
+  padding: 1em; 
+  border-radius: 15px;
+  background-color: #a03d3c;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.sign-up-btn:hover{
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
 .footer-bg{
   position: absolute;
   visibility: hidden;
