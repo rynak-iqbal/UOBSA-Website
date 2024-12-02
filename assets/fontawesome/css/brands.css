@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.ttf") format("truetype"); }
+
+.fa-instagram {
+  --fa: "\f16d"; }
+
+.fa-discord {
+    --fa: "\f392"; }
+
+.fa-tiktok {
+    --fa: "\e07b"; }
+
+.fa-facebook {
+    --fa: "\f09a"; }
