@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-94SP4LJ66H"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Preload critical image -->
+    <link rel="preload" href="Images/boishakh2-1.webp" as="image">
 
-    gtag('config', 'G-94SP4LJ66H');
-    </script>
+    <!-- Meta and title tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" type = "text/css" href="main.css">
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- FontAwesome script (async) -->
     <script src="https://kit.fontawesome.com/26ea42be94.js" crossorigin="anonymous" async></script>
-    <link rel="preload" href="Images/boishakh2-1.webp" as="image">
-    
+
+    <!-- Google Analytics script (async) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-94SP4LJ66H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-94SP4LJ66H');
+    </script>
 </head>
 <body>
 
