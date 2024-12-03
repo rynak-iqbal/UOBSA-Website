@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-94SP4LJ66H"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-94SP4LJ66H');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" type = "text/css" href="main.css">
-    <script src="https://kit.fontawesome.com/26ea42be94.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <!-- Meta and title tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta name="description" content="Welcome to the University of Ottawa's Bangladeshi Students' Association! Join us for exciting events, engaging activities, and a vibrant community of students. Discover how we inspire, connect, and make a difference on campus."> -->
+        <title>Gallery</title>
+    
+        <!-- Stylesheet link -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+    
+        <!-- FontAwesome script (async) -->
+        <!-- <script src="https://kit.fontawesome.com/26ea42be94.js" crossorigin="anonymous" async></script> -->
+        <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
+        <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
+    </head>
 <body>
 
     <div class="menubtn" onclick="changeMenuButton(this)">
@@ -55,13 +56,25 @@
 
         <div class="image-container">
             <div>
-                <img src="Images/iftar24-1-min.JPG">
+                <picture>
+                    <source srcset="Images/iftar24-1-small.webp" media="(max-width: 770px)">
+                    <source srcset="Images/iftar24-1.webp">
+                    <img src="Images/iftar24-1.webp" loading="lazy">
+                </picture>
             </div>
             <div>
-                <img src="Images/iftar24-2-min.JPG">
+                <picture>
+                    <source srcset="Images/iftar24-2-small.webp" media="(max-width: 770px)">
+                    <source srcset="Images/iftar24-2.webp">
+                    <img src="Images/iftar24-2.webp" loading="lazy">
+                </picture>
             </div>
             <div style="margin-bottom: 0px;">
-                <img src="Images/iftar24-3-min.JPG" style="margin-bottom: 0px;">
+                <picture>
+                    <source srcset="Images/iftar24-3-small.webp" media="(max-width: 770px)">
+                    <source srcset="Images/iftar24-3.webp">
+                    <img src="Images/iftar24-3.webp" loading="lazy" style="margin-bottom: 0px;">
+                </picture>
             </div>
         </div>
 
