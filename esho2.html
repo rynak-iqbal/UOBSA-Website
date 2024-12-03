@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-94SP4LJ66H"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-94SP4LJ66H');
-    </script>
+    <!-- Meta and title tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" type = "text/css" href="main.css">
-    <script src="https://kit.fontawesome.com/26ea42be94.js" crossorigin="anonymous"></script>
+    <!-- <meta name="description" content="Welcome to the University of Ottawa's Bangladeshi Students' Association! Join us for exciting events, engaging activities, and a vibrant community of students. Discover how we inspire, connect, and make a difference on campus."> -->
+    <title>Events</title>
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- FontAwesome script (async) -->
+    <!-- <script src="https://kit.fontawesome.com/26ea42be94.js" crossorigin="anonymous" async></script> -->
+    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -33,7 +34,7 @@
     </div>
 
     <div class="white-bar">
-        <a href="index.html"><img class="logo" src="Images/logo.png" id="logo"></a>
+        <a href="index.html"><img class="logo" src="Images/logo-optimized.png" id="logo"></a>
         <div id="topbar">
             <a href="index.html">Home</a>
             <a href="events.html">Events</a>
@@ -55,16 +56,32 @@
 
         <div class="image-container">
             <div>
-                <img src="Images/boishakh2-1.png">
+                <picture>
+                    <source srcset="Images/boishakh2-1-gallery-small.webp" media="(max-width: 770px)">
+                    <source srcset="Images/boishakh2-1-gallery.webp">
+                    <img src="Images/boishakh2-1-gallery.webp" loading="lazy">
+                </picture>
             </div>
             <div>
-                <img src="Images/boishakh2-2.jpg">
+                <picture>
+                    <source srcset="Images/boishakh2-2-gallery-small.webp" media="(max-width: 770px)">
+                    <source srcset="Images/boishakh2-2-gallery.webp">
+                    <img src="Images/boishakh2-2-gallery.webp" loading="lazy">
+                </picture>
             </div>
             <div>
-                <img src="Images/boishakh2-3.jpg">
+                <picture>
+                    <source srcset="Images/boishakh2-3-gallery-small.webp" media="(max-width: 770px)">
+                    <source srcset="Images/boishakh2-3-gallery.webp">
+                    <img src="Images/boishakh2-3-gallery.webp" loading="lazy">
+                </picture>
             </div>
             <div style="margin-bottom: 0px;">
-                <img src="Images/boishakh2-4.jpg" style="margin-bottom: 0px;">
+                <picture>
+                    <source srcset="Images/boishakh2-4-gallery-small.webp" media="(max-width: 770px)">
+                    <source srcset="Images/boishakh2-4-gallery.webp">
+                    <img src="Images/boishakh2-4-gallery.webp" loading="lazy">
+                </picture>
             </div>
         </div>
 
