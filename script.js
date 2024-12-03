@@ -739,8 +739,8 @@ if (fallButton != null){
 }
 
 function changeViewToFall(){
-  document.getElementById("fall-span").textContent = "Fall 2023 ⏴";
-  document.getElementById("winter-span").textContent = "Winter 2023";
+  document.getElementById("fall-span").textContent = "Fall 2024 ⏴";
+  document.getElementById("winter-span").textContent = "Winter 2024";
   document.getElementById("fall-events").style.opacity = "1";
   document.getElementById("winter-events").style.opacity = "0";
 }
@@ -750,8 +750,8 @@ function changeViewToWinter(){
     document.getElementById("winter-events").style.top = "28px";
   } else {
   }
-  document.getElementById("winter-span").textContent = "Winter 2023 ⏴";
-  document.getElementById("fall-span").textContent = "Fall 2023";
+  document.getElementById("winter-span").textContent = "Winter 2024 ⏴";
+  document.getElementById("fall-span").textContent = "Fall 2024";
   document.getElementById("fall-events").style.opacity = "0";
   document.getElementById("winter-events").style.opacity = "1";
 }
