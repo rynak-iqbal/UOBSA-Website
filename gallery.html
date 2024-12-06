@@ -156,7 +156,11 @@
 
         <div class="image-card" onclick="location.href = 'adda1.html'" style="margin-bottom: 0px">
             <div class="image-card-container">
-                <img src="Images/adda_night-min.JPEG" loading="lazy">
+                <picture>
+                    <source srcset="Images/adda-night-small.webp" media="(max-width: 770px)">
+                    <source srcset="Images/adda-night.webp">
+                    <img src="Images/adda-night.webp" loading="lazy">
+                </picture>
             </div>
             <div class="image-card-text">
                 <h2><br>Adda Night 🎲</h2>
