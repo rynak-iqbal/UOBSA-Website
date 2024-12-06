@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-94SP4LJ66H"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-94SP4LJ66H');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" type = "text/css" href="main.css">
-    <script src="https://kit.fontawesome.com/26ea42be94.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <!-- Meta and title tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta name="description" content="Welcome to the University of Ottawa's Bangladeshi Students' Association! Join us for exciting events, engaging activities, and a vibrant community of students. Discover how we inspire, connect, and make a difference on campus."> -->
+        <title>Gallery</title>
+    
+        <!-- Stylesheet link -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+    
+        <!-- FontAwesome script (async) -->
+        <!-- <script src="https://kit.fontawesome.com/26ea42be94.js" crossorigin="anonymous" async></script> -->
+        <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
+        <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
+    </head>
 <body>
 
     <div class="menubtn" onclick="changeMenuButton(this)">
@@ -33,7 +34,7 @@
     </div>
 
     <div class="white-bar">
-        <a href="index.html"><img class="logo" src="Images/logo.png" id="logo"></a>
+        <a href="index.html"><img class="logo" src="Images/logo-optimized.png" id="logo"></a>
         <div id="topbar">
             <a href="index.html">Home</a>
             <a href="events.html">Events</a>
@@ -55,13 +56,25 @@
 
         <div class="image-container">
             <div>
-                <img src="Images/adda2-crowd-min.JPG">
+                <picture>
+                    <source srcset="Images/adda2-crowd-small.webp" media="(max-width: 770px)">
+                    <source srcset="Images/adda2-crowd.webp">
+                    <img src="Images/adda2-crowd.webp" loading="lazy">
+                </picture>
             </div>
             <div>
-                <img src="Images/adda2-food-min.JPG">
+                <picture>
+                    <source srcset="Images/adda2-food-small.webp" media="(max-width: 770px)">
+                    <source srcset="Images/adda2-food.webp">
+                    <img src="Images/adda2-food.webp" loading="lazy">
+                </picture>
             </div>
             <div style="margin-bottom: 0px;">
-                <img src="Images/adda2-board-min.JPG" style="margin-bottom: 0px;">
+                <picture>
+                    <source srcset="Images/adda2-board-small.webp" media="(max-width: 770px)">
+                    <source srcset="Images/adda2-board.webp">
+                    <img src="Images/adda2-board.webp" loading="lazy" style="margin-bottom: 0px;">
+                </picture>
             </div>
         </div>
 
